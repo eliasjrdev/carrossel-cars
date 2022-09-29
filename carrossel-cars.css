@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+@keyframes animacao{
+    from {
+        border-bottom: none;
+      }
+    
+      to {
+        border-bottom: 2px solid;
+      }
+}
+
 
 body{
     background-color: red;
@@ -28,15 +38,15 @@ nav p a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     text-decoration: none;
-    transition-property:text-decoration;
-    transition-duration: 0.5s;
-    transition
+    border-bottom: none;
+    
 }
 
 /*important*/
 nav p a:hover{
     cursor: pointer;
-    text-decoration: underline;
+    animation-name: animacao;
+    animation-duration: 1s;
 }
 
 .container-carrosel{
