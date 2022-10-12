@@ -6,11 +6,11 @@
 @keyframes animacao{
     from {
         border-bottom: none;
-      }
+    }
     
-      to {
+    to {
         border-bottom: 2px solid;
-      }
+    }
 }
 
 
@@ -18,6 +18,10 @@ body{
     background-color: red;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
@@ -50,9 +54,12 @@ nav p a:hover{
 }
 
 .container-carrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -63,43 +70,58 @@ nav p a:hover{
     top: 0;
     transform: translateX(0);
     transition: transform 0.4s ease-in-out;
+    height: 100%;
+    
 }
 
 .efect-slide{
     width: 100vw;
+    height: 100%;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .efect-slide img{
     object-fit: cover;
-    height: 380px;
+    height: 80vh;
     width: 600px;
 }
-
-.efect-slide p{
-    color: white;
-    font-size: 35px;
+.cont-vermais{
+    height: 400px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
 }
 
-.efect-slide button{
-    width: 180px;
-    height: 45px;
-    border-radius: 5px;
+.cont-vermais p{
+    color: white;
+    font-size: 45px;
+}
+
+.cont-vermais button{
+    width: 320px;
+    height: 85px;
+    border-radius: 10px;
     background-color: black;margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border: none;
 }
 
-.efect-slide button:hover{
+.cont-vermais button:hover{
     background-color: rgba(0, 0, 0, 0.87);
     cursor: pointer;
 }
 
-.efect-slide button a{
+.cont-vermais button a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 45px;
 }
+
 
 .butslid{
     background-color: transparent;
@@ -117,11 +139,11 @@ nav p a:hover{
 }
 
 .but-left{
-    left: 10vw;
+    left: 3vw;
 }
 
 .but-right{
-    right: 10vw;
+    right: 3vw;
 }
 
 footer{

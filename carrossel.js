@@ -3,9 +3,9 @@ let vcarrossel = document.getElementById('carrossel');
 let vleft = document.getElementById('left');
 let vright = document.getElementById('right');
 
-const SLIDES_COUNT = vslides.length;
+const SLIDES_COUNT = vslides.length; /*Recebendo a quantidade de divs que tem dentro do carrossel (SLIDES_COUNT significa -> Contar slides)*/
 
-let current_slides = 0;
+let current_slides = 0; // slide atual
 
 vright.addEventListener("click", () => {
     current_slides--;
@@ -16,6 +16,7 @@ vright.addEventListener("click", () => {
     carrosselUpdate();
 });
 
+
 vleft.addEventListener("click", () => {
     current_slides++;
     if(current_slides > SLIDES_COUNT - 1){
@@ -23,6 +24,7 @@ vleft.addEventListener("click", () => {
     }
     carrosselUpdate()
 })
+
 
 function carrosselUpdate(){
 
